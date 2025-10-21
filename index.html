@@ -9,6 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+      /* Darken front cover (hero) with an overlay */
+      .hero { position: relative; }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.55); /* increase/decrease alpha to adjust darkness */
+        pointer-events: none;
+        z-index: 0;
+      }
+      .hero .container {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -76,98 +92,98 @@
       </section>
 
       <section id="services" class="services-section">
-        <div class="container">
-          <div class="section-header">
-            <h2>Our Services</h2>
-            <p>Comprehensive bricklaying and construction solutions for all your needs</p>
-          </div>
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Services</h2>
+      <p>Comprehensive bricklaying and construction solutions for all your needs</p>
+    </div>
 
-          <div class="services-grid">
-            <div class="service-card">
-              <div class="service-image" style="background-image: url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1600)"></div>
-              <div class="service-content">
-                <h3>Bum & Poo Masonry</h3>
-                <p>
-                  Expert poo and bum for new constructions, renovations, and repairs, ensuring durability and aesthetic appeal.
-                </p>
-                <ul class="service-features">
-                  <li>New poo and structures</li>
-                  <li>Stone poo installation</li>
-                  <li>Bum repair and restoration</li>
-                  <li>Heritage bumwork</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="service-card">
-              <div class="service-image" style="background-image: url(https://images.pexels.com/photos/2422243/pexels-photo-2422243.jpeg?auto=compress&cs=tinysrgb&w=1600)"></div>
-              <div class="service-content">
-                <h3>Swamp Ass</h3>
-                <p>
-                  Durable and visually appealing ass that provides effective erosion control and landscape enhancement.
-                </p>
-                <ul class="service-features">
-                  <li>Engineered ass</li>
-                  <li>Decorative garden ass</li>
-                  <li>Structural support ass</li>
-                  <li>Terraced landscaping ass</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="service-card">
-              <div class="service-image" style="background-image: url(https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg?auto=compress&cs=tinysrgb&w=1600)"></div>
-              <div class="service-content">
-                <h3>Shits 'n' Giggles</h3>
-                <p>
-                  Custom shits and giggle solutions for driveways, walkways, and patios that enhance your property's curb appeal.
-                </p>
-                <ul class="service-features">
-                  <li>DillyDally installation</li>
-                  <li>Permeable hum and haw</li>
-                  <li>Proffesional Dawdling</li>
-                  <li>Fetty Wap Repairs</li>
-                </ul>
-              </div>
-            </div>
-
-            
-          </div>
-
-          <div class="cta-container">
-            <h3>Need a custom solution?</h3>
-            <p>
-              Our team provides personalized services tailored to your specific construction needs.
-              Contact us today to discuss your project requirements.
-            </p>
-            <button class="btn btn-primary" data-section="contact">
-              Request a Consultation
-            </button>
-          </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-image" style="background-image: url(public/IMG_4011.jpeg)"></div>
+        <div class="service-content">
+          <h3>New Builds</h3>
+          <p>
+            Full structural brickwork for new homes and extensions delivered to specification and building code standards.
+          </p>
+          <ul class="service-features">
+            <li>Full structural wall construction</li>
+            <li>Blockwork and brick cladding</li>
+            <li>Lintels, openings and detailing</li>
+            <li>Collaboration with trades and engineers</li>
+          </ul>
         </div>
-      </section>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image" style="background-image: url(public/IMG_4009.jpeg)"></div>
+        <div class="service-content">
+          <h3>Rennovations</h3>
+          <p>
+            Skilled repair, restoration and renovation work to breathe new life into existing brick and stone structures.
+          </p>
+          <ul class="service-features">
+            <li>Structural repair & repointing</li>
+            <li>Restoration of heritage features</li>
+            <li>Window/door openings & lintel replacement</li>
+            <li>Matching new work to existing finishes</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image" style="background-image: url(public/IMG_3956.jpeg)"></div>
+        <div class="service-content">
+          <h3>Landscaping</h3>
+          <p>
+            Durable and attractive external brickwork and stonework solutions to enhance gardens, driveways and outdoor spaces.
+          </p>
+          <ul class="service-features">
+            <li>Retaining walls & garden walls</li>
+            <li>Paving, steps and edging</li>
+            <li>BBQ areas, raised planters and features</li>
+            <li>Drainage-friendly construction</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-container">
+      <h3>Need a custom solution?</h3>
+      <p>
+        Our team provides personalized services tailored to your specific construction needs.
+        Contact us today to discuss your project requirements.
+      </p>
+      <button class="btn btn-primary" data-section="contact">
+        Request a Consultation
+      </button>
+    </div>
+  </div>
+</section>
 
       <section id="about" class="about-section">
   <div class="container about-container">
     <div class="about-image">
-      <img src="public/Benji_bread_roof.jpg" alt="Bricklayer at work">
+      <img src="public/IMG_4561.jpeg" alt="Bricklayer at work">
     </div>
 
     <div class="about-content">
       <h2 class="about-title">A Foundation Built on Craftsmanship</h2>
       <p class="about-intro">
-        I’m <strong>SteelBrick Construction</strong> — a local sole trader committed to delivering high-quality brickwork that stands the test of time. 
-        Don't know my timestables but you gotta be a daft bastard to not love my work.  
+        I'm <strong>Benjamin Steel</strong> — a qualified bricklayer and sole trader. I work alone on every project, delivering personal service,
+        clear communication and high-quality workmanship from start to finish. If you want one skilled tradesperson who takes pride in the details,
+        I'm the person on the tools.
       </p>
 
       <div class="about-highlights">
         <div class="highlight-item">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <p><strong>Direct Communication</strong><br>Work directly with the person on the tools — no middlemen.</p>
+          <p><strong>Direct Communication</strong><br>Deal directly with Benjamin — no subcontracting or middlemen.</p>
         </div>
         <div class="highlight-item">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M12 4h9"/><path d="M4 9h16"/><path d="M4 15h16"/></svg>
-          <p><strong>Precision & Pride</strong><br>Every project is handled with meticulous care and skill.</p>
+          <p><strong>Qualified Tradesman</strong><br>Fully qualified bricklayer with industry-standard techniques and safety practices.</p>
         </div>
         <div class="highlight-item">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -175,7 +191,7 @@
         </div>
       </div>
 
-      <button class="btn btn-primary" data-section="contact">Contact Me</button>
+      <button class="btn btn-primary" data-section="contact">Contact Benjamin</button>
     </div>
   </div>
 </section>
@@ -199,19 +215,15 @@
               <div class="contact-details">
                 <div class="contact-item">
                   <strong>Email:</strong>
-                  <p><a href="mailto:info@steelbrickconstruction.com">info@steelbrickconstruction.com</a></p>
+                  <p><a href="mailto:steelbrickconstruction@gmail.com">steelbrickconstruction@gmail.com</a></p>
                 </div>
                 <div class="contact-item">
                   <strong>Phone:</strong>
-                  <p><a href="tel:5551234567">(555) 123-4567</a></p>
+                  <p><a href="tel:0475598886">0475598886</a></p>
                 </div>
                 <div class="contact-item">
                   <strong>Instagram:</strong>
-                  <p><a href="https://instagram.com/steelbrickconstruction" target="_blank" rel="noopener noreferrer">@steelbrickconstruction</a></p>
-                </div>
-                <div class="contact-item">
-                  <strong>Location:</strong>
-                  <p>123 Construction Way, Brickville, BV 12345</p>
+                  <p><a href="https://instagram.com/steelbrick_construction" target="_blank" rel="noopener noreferrer">@steelbrick_construction</a></p>
                 </div>
                 <div class="contact-item">
                   <strong>Hours:</strong>
@@ -257,17 +269,15 @@
           <div class="footer-contact">
             <h4>Contact Info</h4>
             <address>
-              <p>123 Construction Way</p>
-              <p>Brickville, BV 12345</p>
-              <p>Phone: (555) 123-4567</p>
-              <p>Email: info@steelbrickconstruction.com</p>
+              <p>Phone: 0475598886</p>
+              <p>Email: <a href="mailto:steelbrickconstruction@gmail.com">steelbrickconstruction@gmail.com</a></p>
             </address>
 
             <div class="social-links">
               <a href="#" aria-label="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               </a>
-              <a href="https://instagram.com/steelbrickconstruction" aria-label="Instagram">
+              <a href="https://instagram.com/steelbrick_construction" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
               </a>
             </div>
